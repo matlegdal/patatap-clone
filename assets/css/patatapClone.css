@@ -1,0 +1,55 @@
+@keyframes pulse {
+    0% {
+     opacity: 1;
+    }
+
+    50% {
+     opacity: 0.3;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+#message {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+}
+
+#message h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+#message h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+#message .pulsing {
+    animation: pulse 3s linear infinite;
+}
+
+#message span {
+    color: #ffd760;
+}
